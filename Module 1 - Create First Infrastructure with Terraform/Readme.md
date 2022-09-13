@@ -3,8 +3,6 @@
 The code mentioned in this document are used in the HashiCorp Certified Terraform Associate 2022 video course.
 
 
-# Video-Document Mapper
-
 | Sr No | Document Link |
 | ------ | ------ |
 | 1 | [Creating first EC2 instance with Terraform][PlDa] |
