@@ -1,10 +1,10 @@
 terraform {
-    required_providers {
-      aws = {
-        source = "hashicorp/aws"
-        version = "~> 3.0"
-      }
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+      version = "4.30.0"
     }
+  }
 }
 
 provider "aws" {
@@ -13,10 +13,14 @@ provider "aws" {
   secret_key = "jc+T54UY69Ma69oYGRjetjyUP4Lwnt/jebOhedK9"
 }
 
-resource "aws_instance" "myec2" {
-   ami = "ami-06489866022e12a14"
-   instance_type = "t2.micro"
-}
+# resource "aws_instance" "myec2" {
+#    ami = "ami-06489866022e12a14"
+#    instance_type = "t2.micro"
+# }
+
+# output "eip" {
+#   value = aws_instance.myec2.arn
+# }
 
 
 # provider "github" {
